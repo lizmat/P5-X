@@ -4,7 +4,7 @@
   ],
   "build-depends" : [ ],
   "depends" : [ ],
-  "description" : "Implement Perl 5's -X built-ins",
+  "description" : "Implement Perl's -X built-ins",
   "license" : "Artistic-2.0",
   "name" : "P5-X",
   "perl" : "6.c",
@@ -18,5 +18,5 @@
     "CPAN5"
   ],
   "test-depends" : [ ],
-  "version" : "0.0.2"
+  "version" : "0.0.3"
 }

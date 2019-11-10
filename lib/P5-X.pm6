@@ -1,5 +1,5 @@
 use v6.c;
-unit module P5-X:ver<0.0.2>;
+unit module P5-X:ver<0.0.3>;
 
 my role Subject-X { has $.subject }
 
@@ -73,7 +73,7 @@ multi sub prefix:<-z>(Subject-X:D $s)  { chain($s,z)      }
 
 =head1 NAME
 
-P5-X - Implement Perl 5's -X built-ins
+P5-X - Implement Perl's -X built-ins
 
 =head1 SYNOPSIS
 
@@ -81,7 +81,7 @@ P5-X - Implement Perl 5's -X built-ins
 
 =head1 DESCRIPTION
 
-This module tries to mimic the behaviour of the C<-X> built-ins of Perl 5 as
+This module tries to mimic the behaviour of the C<-X> built-ins of Perl as
 closely as possible.
 
 =head1 PORTING CAVEATS
@@ -97,9 +97,9 @@ Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018 Elizabeth Mattijsen
+Copyright 2018-2019 Elizabeth Mattijsen
 
-Re-imagined from Perl 5 as part of the CPAN Butterfly Plan.
+Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
