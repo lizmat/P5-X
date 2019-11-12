@@ -2,6 +2,9 @@ Revision history for P5-X
 
 {{$NEXT}}
 
+0.0.5  2019-11-12T12:04:25+01:00
+    - Fixed a problem in the auth section of META6.json
+
 0.0.4  2019-11-10T20:55:27+01:00
     - Oops, did not have "auth" field yet
 

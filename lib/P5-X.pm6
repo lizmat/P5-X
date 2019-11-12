@@ -1,5 +1,5 @@
 use v6.c;
-unit module P5-X:ver<0.0.4>:auth<ELIZABETH>;
+unit module P5-X:ver<0.0.5>:auth<ELIZABETH>;
 
 my role Subject-X { has $.subject }
 
