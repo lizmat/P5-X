@@ -1,11 +1,11 @@
-use v6.c;
-unit module P5-X:ver<0.0.6>:auth<cpan:ELIZABETH>;
+use v6.d;
+unit module P5-X:ver<0.0.7>:auth<cpan:ELIZABETH>;
 
 my role Subject-X { has $.subject }
 
 my enum Index ( <r w x e d f l s z> );
-BEGIN my @methods = Index.^enum_value_list.map( { IO::Path.can("$_")[0] } );
-
+my constant @methods = Index.^enum_value_list.map( { IO::Path.can("$_").head } );
+ 
 my sub io($io, $index) {
     my $result := @methods[$index]($io);
     $result ~~ Failure
@@ -73,7 +73,7 @@ multi sub prefix:<-z>(Subject-X:D $s)  { chain($s,z)      }
 
 =head1 NAME
 
-P5-X - Implement Perl's -X built-ins
+Raku port of Perl's -X built-ins
 
 =head1 SYNOPSIS
 
@@ -81,8 +81,8 @@ P5-X - Implement Perl's -X built-ins
 
 =head1 DESCRIPTION
 
-This module tries to mimic the behaviour of the C<-X> built-ins of Perl as
-closely as possible.
+This module tries to mimic the behaviour of Perl's C<-X> built-ins in Raku
+as closely as possible.
 
 =head1 PORTING CAVEATS
 
@@ -97,7 +97,7 @@ Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018-2019 Elizabeth Mattijsen
+Copyright 2018-2020 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 

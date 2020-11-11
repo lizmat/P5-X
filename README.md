@@ -1,7 +1,7 @@
 NAME
 ====
 
-P5-X - Implement Perl's -X built-ins
+Raku port of Perl's -X built-ins
 
 SYNOPSIS
 ========
@@ -11,7 +11,7 @@ SYNOPSIS
 DESCRIPTION
 ===========
 
-This module tries to mimic the behaviour of the `-X` built-ins of Perl as closely as possible.
+This module tries to mimic the behaviour of Perl's `-X` built-ins in Raku as closely as possible.
 
 PORTING CAVEATS
 ===============
@@ -28,7 +28,7 @@ Source can be located at: https://github.com/lizmat/P5-X . Comments and Pull Req
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2018-2019 Elizabeth Mattijsen
+Copyright 2018-2020 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 

@@ -2,6 +2,12 @@ Revision history for P5-X
 
 {{$NEXT}}
 
+0.0.7  2020-11-11T15:38:31+01:00
+    - Change name of distribution.
+    - Update to 6.d and other small tweaks
+    - Run tests in highest version of Raku
+    - Update copyright year
+ 
 0.0.6  2019-11-12T12:08:19+01:00
     - Argh, the META6.json is derived from the code  :-(
 
