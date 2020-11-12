@@ -16,7 +16,13 @@ This module tries to mimic the behaviour of Perl's `-X` built-ins in Raku as clo
 PORTING CAVEATS
 ===============
 
-Other -X built-ins are in the process of being supported.
+In future language versions of Raku, it will become impossible to access the `$_` variable of the caller's scope, because it will not have been marked as a dynamic variable. So please consider changing:
+
+    -f;
+
+to:
+
+    -f $_;
 
 AUTHOR
 ======

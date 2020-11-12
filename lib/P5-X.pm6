@@ -1,5 +1,5 @@
 use v6.d;
-unit module P5-X:ver<0.0.7>:auth<cpan:ELIZABETH>;
+unit module P5-X:ver<0.0.8>:auth<cpan:ELIZABETH>;
 
 my role Subject-X { has $.subject }
 
@@ -86,7 +86,15 @@ as closely as possible.
 
 =head1 PORTING CAVEATS
 
-Other -X built-ins are in the process of being supported.
+In future language versions of Raku, it will become impossible to access the
+C<$_> variable of the caller's scope, because it will not have been marked as
+a dynamic variable.  So please consider changing:
+
+    -f;
+
+to:
+
+    -f $_;
 
 =head1 AUTHOR
 
@@ -104,3 +112,5 @@ Re-imagined from Perl as part of the CPAN Butterfly Plan.
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
 =end pod
+
+# vim: expandtab shiftwidth=4

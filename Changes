@@ -2,6 +2,10 @@ Revision history for P5-X
 
 {{$NEXT}}
 
+0.0.8  2020-11-12T12:36:56+01:00
+    - Change name of distribution in META info
+    - Add CAVEATS section about accessing $_ in callers scope
+
 0.0.7  2020-11-11T15:38:31+01:00
     - Change name of distribution.
     - Update to 6.d and other small tweaks

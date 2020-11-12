@@ -33,4 +33,4 @@ indir $?FILE.IO.parent, {
 #    is (-f -z "nowhere"), "", "is -f -z 'nowhere' ok";
 }
 
-# vim: ft=perl6 expandtab sw=4
+# vim: expandtab shiftwidth=4

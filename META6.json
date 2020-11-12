@@ -7,7 +7,7 @@
   ],
   "depends": [
   ],
-  "description": "Implement Perl's -X built-ins",
+  "description": "Raku port of Perl's -X built-ins",
   "license": "Artistic-2.0",
   "name": "P5-X",
   "perl": "6.c",
@@ -23,5 +23,5 @@
   ],
   "test-depends": [
   ],
-  "version": "0.0.7"
+  "version": "0.0.8"
 }
