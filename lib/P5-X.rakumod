@@ -1,5 +1,5 @@
 use v6.d;
-unit module P5-X:ver<0.0.8>:auth<cpan:ELIZABETH>;
+unit module P5-X:ver<0.0.9>:auth<zef:lizmat>;
 
 my role Subject-X { has $.subject }
 
@@ -81,8 +81,8 @@ Raku port of Perl's -X built-ins
 
 =head1 DESCRIPTION
 
-This module tries to mimic the behaviour of Perl's C<-X> built-ins in Raku
-as closely as possible.
+This module tries to mimic the behaviour of Perl's C<-X> built-ins as
+closely as possible in the Raku Programming Language.
 
 =head1 PORTING CAVEATS
 
@@ -98,14 +98,14 @@ to:
 
 =head1 AUTHOR
 
-Elizabeth Mattijsen <liz@wenzperl.nl>
+Elizabeth Mattijsen <liz@raku.rocks>
 
 Source can be located at: https://github.com/lizmat/P5-X . Comments and
 Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018-2020 Elizabeth Mattijsen
+Copyright 2018, 2019, 2020, 2021 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 

@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/lizmat/P5-X/workflows/test/badge.svg)](https://github.com/lizmat/P5-X/actions)
+
 NAME
 ====
 
@@ -11,7 +13,7 @@ SYNOPSIS
 DESCRIPTION
 ===========
 
-This module tries to mimic the behaviour of Perl's `-X` built-ins in Raku as closely as possible.
+This module tries to mimic the behaviour of Perl's `-X` built-ins as closely as possible in the Raku Programming Language.
 
 PORTING CAVEATS
 ===============
@@ -27,14 +29,14 @@ to:
 AUTHOR
 ======
 
-Elizabeth Mattijsen <liz@wenzperl.nl>
+Elizabeth Mattijsen <liz@raku.rocks>
 
 Source can be located at: https://github.com/lizmat/P5-X . Comments and Pull Requests are welcome.
 
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2018-2020 Elizabeth Mattijsen
+Copyright 2018, 2019, 2020, 2021 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
