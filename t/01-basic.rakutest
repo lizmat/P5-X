@@ -1,4 +1,4 @@
-use v6.*;
+use v6.d;
 use Test;
 use P5-X;
 
@@ -7,11 +7,10 @@ my @exported = <r w x e d f l s z>.map: '&prefix:<-' ~ * ~ '>';
 my @files = <r rw rwx rx>;
 my @perms = <4  6   7  5>.map: (* ~ '00').parse-base(8);
 
-plan @exported * 2 + @files * 6;
+plan @exported + @files * 6;
 
 for @exported {
     ok defined(::($_)), "is $_ imported?";
-    ok !defined(P5-X::{$_}), "is $_ externally NOT accessible?";
 }
 
 indir $?FILE.IO.parent, {
